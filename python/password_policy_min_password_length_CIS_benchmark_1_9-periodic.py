@@ -22,7 +22,7 @@ def lambda_handler(event, context):
     pw_length = response['PasswordPolicy']['MinimumPasswordLength']
     
     #Evaluate Compliance
-    if (pw_length < 14):
+    if (pw_length < 11):
         compliance_value = 'NON_COMPLIANT'
     else:
         compliance_value = 'COMPLIANT'
